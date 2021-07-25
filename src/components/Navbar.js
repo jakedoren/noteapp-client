@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import AuthContext from '../AuthContext/AuthContext';
+import LogoutBtn from './auth/LogoutBtn';
 
 const Navbar = () => {
 
@@ -20,6 +21,7 @@ const Navbar = () => {
             {loggedin === true && (
                 <>
                     <Link to="/notes">Notes</Link>
+                    <LogoutBtn />
                 </>
             )}
         </div>

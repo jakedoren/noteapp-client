@@ -1,9 +1,13 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import AuthContext from '../../AuthContext/AuthContext';
 
 const Register = () => {
 
     const authService = 'http://localhost:8080/auth';
+    const { getLoggedIn } = useContext(AuthContext);
+    const history = useHistory();
 
     const [ formInfo, setFormInfo ] = useState({
         email: '',
@@ -17,12 +21,16 @@ const Register = () => {
         })
     };
 
-    const  handleSubmit = (e) => {
-        e.preventDefault()
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-        axios.post(authService, formInfo)
-            .then(result => console.log(result))
-            .catch(err => console.log(err))
+        try {
+            await axios.post(authService, formInfo)
+            await getLoggedIn();
+            history.push('/')
+        } catch(err) {
+            console.log(err)
+        }
 
     };
 

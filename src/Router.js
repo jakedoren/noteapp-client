@@ -20,7 +20,9 @@ const Router = () => {
                     <Route path="/login" component={Login} />
                 </>
             )}
-            {loggedin === true && <Route path="/notes" />}
+            {loggedin === true && <> 
+                <Route path="/notes" /> 
+            </>}
         </Switch>
     </BrowserRouter>
 }
