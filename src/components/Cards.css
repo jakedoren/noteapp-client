@@ -1,0 +1,19 @@
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: greenyellow;
+    width: 100px;
+    flex: 1;
+}
+
+.card-content {
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    background-color: grey;
+}
+
+.card-content img {
+    height: 150px;
+}
