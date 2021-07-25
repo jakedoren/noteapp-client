@@ -1,0 +1,27 @@
+.hero {
+    height: 900px;
+    background-color: blue;
+}
+
+.hero-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+}
+
+.hero-left, .hero-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: blueviolet;
+}
+
+.hero-right {
+    background-color: brown;
+}
+
+.hero-img {
+    height: 50%;
+}

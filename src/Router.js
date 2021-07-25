@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import AuthContext from './AuthContext/AuthContext';
+import Home from './components/pages/Home';
 
 const Router = () => {
 
@@ -13,7 +14,7 @@ const Router = () => {
         <Navbar />
         <Switch>
 
-            <Route exact path="/" />
+            <Route exact path="/" component={Home} />
             {loggedin === false && (
                 <>
                     <Route path="/register" component={Register} />

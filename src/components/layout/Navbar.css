@@ -1,0 +1,29 @@
+nav {
+    height: 80px;
+    background-color: aquamarine;
+    width: 100%;
+}
+
+.nav-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.links {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links a{
+    margin-left: 2em;
+}
+
+.register {
+    background-color: blue;
+    padding: 0.7em;
+    border-radius: 0.5em;
+}
