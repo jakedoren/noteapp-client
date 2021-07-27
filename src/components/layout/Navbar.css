@@ -1,6 +1,6 @@
 nav {
     height: 80px;
-    background-color: aquamarine;
+    background-color: #ae84d3;
     width: 100%;
 }
 
@@ -20,10 +20,12 @@ nav {
 
 .links a{
     margin-left: 2em;
+    color: #fff;
+    text-decoration: none;
 }
 
 .register {
-    background-color: blue;
+    background-color: #ff5e43;
     padding: 0.7em;
     border-radius: 0.5em;
 }

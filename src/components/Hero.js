@@ -8,8 +8,9 @@ const Hero = () => {
         <div className="hero">
             <div className="hero-wrapper">
                 <div className="hero-left">
-                    <div>
-                        <h1>Write it down.</h1>
+                    <div className="left-text">
+                        <h1>Write it down,</h1>
+                        <h1 className="forget">Never Forget.</h1>
                         <p>Utilize notekeeper to keep your thoughts from floating away.</p>
                         <Link to="/register" className="register" > Register </Link>
                     </div>
