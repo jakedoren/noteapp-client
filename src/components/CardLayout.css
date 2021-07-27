@@ -2,6 +2,8 @@
     height: 500px;
     background-color: #ae84d3;
     color: #fff;
+    padding: 150px 0;
+    position: relative;
 }
 
 .cards-wrapper {
@@ -10,4 +12,41 @@
     /* background-color: green; */
     margin: 0 auto;
     display: flex;
+}
+
+.card-heading {
+    width: 85%;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.card-heading h1 {
+    margin-top: 0;
+}
+
+.card-heading h1, .card-heading p {
+    color: #fff;
+}
+
+.card-heading hr {
+    height: 3px;
+    background-color: #fff;
+    border: 0;
+}
+
+.bottom-block {
+    position: absolute;
+    bottom: -40px;
+    height: 80px;
+    width: 700px;
+    background-color: #0e1049;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    border-radius: 0.2em;
+}
+
+.bottom-block h1 {
+    color: #fff;
 }
