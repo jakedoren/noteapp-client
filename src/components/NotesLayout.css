@@ -1,0 +1,11 @@
+.notes-layout {
+    height: 900px;
+}
+
+.notes-layout-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    height: 100%;
+    /* display: flex; */
+}
+

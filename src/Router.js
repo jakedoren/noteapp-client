@@ -5,6 +5,7 @@ import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import AuthContext from './AuthContext/AuthContext';
 import Home from './components/pages/Home';
+import Notes from './components/pages/Notes'
 
 const Router = () => {
 
@@ -22,7 +23,7 @@ const Router = () => {
                 </>
             )}
             {loggedin === true && <> 
-                <Route path="/notes" /> 
+                <Route path="/notes" component={Notes} /> 
             </>}
         </Switch>
     </BrowserRouter>
