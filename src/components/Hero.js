@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import newIdea from '../assets/dizzy-new-idea.png'
+import newIdea from '../assets/dev-focus-f.png'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {

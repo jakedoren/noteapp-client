@@ -43,6 +43,16 @@
 .register {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    background-color: #7DBA40;
+}
+
+.register-shadow {
+    position: absolute;
+    background-color: blue;
+    padding: 1em;
+    width: 3em;
+    left: 20%;
 }
 
 .forget {
@@ -50,6 +60,7 @@
     background-color: #ff5e43;
     background-color: #ae84d3;
     background-color: #835e8b;
+    background-color: #3F3D56;
     border-radius: 0.2em;
     color: #fff;
     text-align: center;

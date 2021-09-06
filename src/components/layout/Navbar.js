@@ -7,7 +7,7 @@ import './Navbar.css'
 const Navbar = () => {
 
     const { loggedin } = useContext(AuthContext);
-    console.log(loggedin)
+    // console.log(loggedin)
 
     return (
         <nav>

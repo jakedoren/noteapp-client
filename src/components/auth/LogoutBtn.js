@@ -2,6 +2,8 @@ import axios from 'axios'
 import React, { useContext } from 'react'
 import { useHistory } from 'react-router-dom';
 import AuthContext from '../../AuthContext/AuthContext';
+import { CgLogOut } from 'react-icons/cg'
+import { IconContext } from "react-icons";
 
 export default function LogoutBtn() {
 
@@ -15,5 +17,7 @@ export default function LogoutBtn() {
         history.push('/');
     }
 
-    return <button onClick={logOut} >Log Out</button>
+    return <IconContext.Provider value={{ style: { verticalAlign: 'middle' } }}> <CgLogOut className="logout" onClick={logOut} color="#7DBA40" size="1.5em"></CgLogOut> </IconContext.Provider>
+    
+    
 }

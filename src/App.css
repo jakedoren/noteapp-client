@@ -3,8 +3,25 @@
 body {
     margin: 0;
     font-family: 'Montserrat';
+    background-color: #fafafa;
 }
 
 h1, p {
     color: #1f1f1f;
+}
+
+button {
+    /* background-color: #ff5e43; */
+    /* background-color: #F06F6F; */
+    background-color: #7DBA40;
+    color: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.logout {
+    text-decoration: none;
+    margin-left: 2em;
+    cursor: pointer;
 }

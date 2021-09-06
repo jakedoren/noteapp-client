@@ -23,7 +23,7 @@ const NotesLayout = () => {
             <div className="notes-layout-wrapper">
                 <NoteInput notes={notes} setNotes={setNotes} />
                 {notes.map(note => {
-                    return <Note title={note.title} body={note.body} />
+                    return <Note title={note.title} body={note.body} key={note._id} id={note._id} setNotes={setNotes} notes={notes} />
                 })}
             </div>
         </div>

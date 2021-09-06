@@ -1,0 +1,53 @@
+.note-input {
+    width: 50%;
+    height: 14em;
+    background-color: #3F3D56;
+    border-radius: 7px;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+
+.input-wrapper {
+
+    input, textarea  {
+        // padding: 0.5em;
+        margin: 0.3em;
+        border: 0;
+    }
+
+    input, textarea {
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+    input::placeholder, textarea::placeholder {
+        color: #fff;
+    }
+
+    input, textarea {
+        padding: 0.5em;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    button {
+        padding: 0.5em;
+    }
+
+}
+
+.plus {
+    margin: 0.3em auto;
+    cursor: pointer;
+}

@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import './NoteInput.css'
+import './NoteInput.scss'
+import { AiFillPlusCircle } from 'react-icons/ai'
+
 
 const NoteInput = ({notes, setNotes}) => {
     const [ note, setNote ] = useState({
         title: '',
-        body: '',
+        body: ''
     })
 
     const noteService = 'http://localhost:8080/note'
@@ -19,7 +21,8 @@ const NoteInput = ({notes, setNotes}) => {
     const handleSubmit = async (e) => {
 
         const createdNote = await axios.post(noteService, note)
-        setNotes([...notes, note])
+        console.log(createdNote.data)
+        setNotes([...notes, {...note, _id: createdNote.data._id}])
 
         if(createdNote) {
             console.log('success')
@@ -29,9 +32,12 @@ const NoteInput = ({notes, setNotes}) => {
 
     return (
         <div className="note-input">
-            <input type="text" placeholder="title" name="title" value={note.title} onChange={handleChange} />
-            <input type="text" placeholder="take a note..." name="body" value={note.body} onChange={handleChange} />
-            <button onClick={handleSubmit} >Create</button>
+            <div className="input-wrapper">
+                <input type="text" placeholder="Title" name="title" value={note.title} onChange={handleChange} />
+                <textarea type="text" placeholder="Take a note..." name="body" value={note.body} onChange={handleChange} />
+                {/* <button onClick={handleSubmit} >Create</button> */}
+                <AiFillPlusCircle onClick={handleSubmit} color="#7DBA40" className="plus" size="2em" />
+            </div>
         </div>
     )
 }
